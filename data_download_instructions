@@ -1,0 +1,24 @@
+Instructions to download teh whole set of Ensembl bacteria genomes (this example if for Ensembl bacteria Realease 23 and pfam version 27, change the path accordinly for other release. Note that newer version might require changes in the protocol to work properly)
+
+	- GDT files (coding regions in the genomes among other features)
+	wget -nd -r --no-parent ftp://ftp.ensemblgenomes.org/pub/bacteria/release-23/gtf/ 
+
+	Note:
+	"-nd -r --no-parent" -> Download all files into the path (including subdirectories) in the current directory
+
+	- Pep files (aminoacid fasta files of the coding regions)
+	wget -nd -r --no-parent -A '*pep.all.fa.gz' ftp://ftp.ensemblgenomes.org/pub/bacteria/release-23/fasta/
+
+	Note:
+	"-nd -r --no-parent -A '*pep.all.fa.gz'" ->  Download all files into the path (including subdirectories) that satifies the regular expression '*pep.all.fa.gz' (it finishs with pep.all.fa.gz) in the current directory
+
+- Ensembl species:
+	wget ftp://ftp.ensemblgenomes.org/pub/bacteria/release-23/species_EnsemblBacteria.txt
+
+- Pfam HMM profiles:
+	wget ftp://ftp.ebi.ac.uk/pub/databases/Pfam/releases/Pfam27.0/Pfam-A.hmm.gz
+
+
+
+
+

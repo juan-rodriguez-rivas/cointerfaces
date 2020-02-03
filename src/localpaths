@@ -1,0 +1,28 @@
+# Specify project root directory
+root_dir = /home/jrodrig5/projects/cointerfaces
+
+# Relative paths from root_dir to the genomic data
+ensembl_bacteria_gtf 	= /data/ensembl_bacteria/selection_100_genomes/gtf_files_filtered
+ensembl_bacteria_fasta 	= /data/ensembl_bacteria/selection_100_genomes/fasta_files
+list_of_genomes = /data/ensembl_bacteria/selection_100_genomes/list_of_genomes
+genomes_info = /data/ensembl_bacteria/selection_100_genomes/species_EnsemblBacteria.txt
+
+# Relatives paths from root_dir to the temporary and source code directories
+temp_dir	= /tmp
+src_dir 	= /src
+
+# Global parameters definitions
+# Number between 0 and 1 specifying the HMM matches states coverage require for each sequence
+coverage 			= 0.8
+# Number between 0 and 1 specifying the maximum percentage identity allow between each pair of sequence in the alignments 
+redundancy 		= 0.8
+# Distance in base pairs used as a threshold for genomic proximity pairing
+operon_distance = 300
+# Enable (1) or disable (0) the option of pairing by uniqueness in genome 
+strategy_uniques = 1  
+
+# External programs location
+cdhit 				= /third_party_software/cd-hit
+hmmer 				= /third_party_software/hmmer-3.0-linux-intel-x86_64
+hhsuite 			= /third_party_software/hhsuite-2.0.15-linux-x86_64
+blast 				= /third_party_software/blast-2.2.18
