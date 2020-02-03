@@ -50,7 +50,7 @@ The test will quantify if there are relevant differences between the computed co
 
 By default, cointerfaces uses two strategies for pairing interacting sequences:
 1. Genomic proximity: Homologous sequences to the HMM profiles have been found in the same gene or a pair genes close in the their genome (by default, 300 base pairs)
-2. UniUniqueness in genomes: Only one hit is found for each of the two HMM profiles in a given genomes. This option can be set with a parameter, it should be turn off if there are no external evidence that the two HMM profiles correspond to a known pair of interacting protein domain families.
+2. Uniqueness in genomes: Only one hit is found for each of the two HMM profiles in a given genomes. This option can be set with a parameter, it should be turn off if there are no external evidence that the two HMM profiles correspond to a known pair of interacting protein domain families.
 
 The protocol can be ran from a pair of protein sequences. This can be achieved by making HMM profiles using jackhmmer, but it's needed to use the same version of HMMER (e.g. use jakchmmer in third_party_software/hmmer/binaries)
 
