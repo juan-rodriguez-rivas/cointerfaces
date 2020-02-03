@@ -28,7 +28,7 @@ Extract the data
 
 A selection of 100 genomes is included for testing. For real case scenarios, please download the whole collection (ensembl bacteria release 23) following the instructions in file data_download_instructions.
 
-**Modify the project_root variable in src/localpahts file to match the path of the project directory**
+Modify the project_root variable in src/localpahts file to match the path of **your local project directory**
 
 Compile fmpl program
 > cd src/protocol/dca_model/mpl/
