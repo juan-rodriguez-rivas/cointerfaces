@@ -12,7 +12,7 @@ Cointerfaces uses the following software:
 
 The following instructions are given for its installation in Ubuntu. The installation in any linux distribution should be very similar, with the use of a different package manager.
 
-Cointerfaces run on linux requires perl, python and fortran compiler:
+Cointerfaces requires perl, python3 and a fortran compiler:
 > sudo apt-get install perl python3 gfortran
 
 The following python packages are needed
@@ -43,14 +43,14 @@ The included test should take around 5-10 minutes
 > cd test
 > ./run_test.py
 
-The test will quantify if there are relevant differences between the computed contact prediction against a stored one. The files *old in test/ correspond to the stored ones which can be used for comparison (e.g. the compare the joint alignment)
+The test will quantify if there are relevant differences between the computed contact prediction against a stored one. The files ended by old in test/ correspond to the stored ones which can be used for comparison (e.g. the compare the joint alignment)
 
 
 ## Miscelaneous
 
 By default, cointerfaces uses two strategies for pairing interacting sequences:
 1. Genomic proximity: Homologous sequences to the HMM profiles have been found in the same gene or a pair genes close in the their genome (by default, 300 base pairs)
-2. Uniquines in genomes: Only one hit is found for each of the two HMM profiles in a given genomes. This option can be set with a parameter, it should be turn off if there are no external evidence that the two HMM profiles correspond to a known pair of interacting protein domain families.
+2. UniUniqueness in genomes: Only one hit is found for each of the two HMM profiles in a given genomes. This option can be set with a parameter, it should be turn off if there are no external evidence that the two HMM profiles correspond to a known pair of interacting protein domain families.
 
 The protocol can be ran from a pair of protein sequences. This can be achieved by making HMM profiles using jackhmmer, but it's needed to use the same version of HMMER (e.g. use jakchmmer in third_party_software/hmmer/binaries)
 
