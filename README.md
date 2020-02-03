@@ -3,7 +3,7 @@
 **Cointerfaces** is a protocol to build a joint alignment (or paired alignment) of a pair of interacting domains and detect inter-domain physical contacts using the joint alignment built. It takes as input two HMM profiles and return two FASTA files codifying the joint alignment as well as a file with coevolutioary scores for each pair of positions. This protocol was used in the publication (["Conservation of coevolving protein interfaces bridges prokaryote-eukaryote homologies in the twilight zone"](http://www.pnas.org/content/113/52/15018.full)).
 
 Cointerfaces uses the following software:
-- [fmpl](https://github.com/simomarsili/fmpl) implementation of plmDCA developed by Simone Marsili (@simomarsili) to compute the DCA coevolutionary model. 
+- [fmpl](https://github.com/simomarsili/fmpl) implementation of plmDCA developed by Simone Marsili (@simomarsili) to compute the DCA coevolutionary model.
 - [HMMER](http://hmmer.org/) sequence analysis software developed in Eddy lab.
 - [HHsuite](https://github.com/soedinglab/hh-suite) sequence analysis software developed in Soeding lab.
 - [cdhit](http://weizhongli-lab.org/cd-hit/) developed by Dr. Weizhong Li at Dr. Adam Godzik's Lab.
